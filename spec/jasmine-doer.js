@@ -56,7 +56,7 @@ describe("jQuery.fn.doer, that's $el.doer([object])", function() {
 
 describe("Favor composition over inheritance", function() {
 
-  it("as.ArbitraryBusinessLogic(o) is just a convention", function() {
+  it("With the convention: as.ArbitraryBusinessLogic(o)", function() {
 
   });
 
@@ -64,16 +64,29 @@ describe("Favor composition over inheritance", function() {
 
   });
 
-  // See doer.asset
-  xit("Defines as.rt that does console.assert with fail for undefined", function() {
+  it("Makes calls between composables traceable and easy to follow", function() {
 
   });
 
-  it("Deals with neiter pseudo-Classes nor prototypes", function() {
+  it("Deals with neither pseudo-Classes nor prototypes", function() {
 
   });
 
-  it("Provides encapsulation anyway because as.")
+  it("Provides encapsulation anyway because as.Whatever is a function that can do 'var'", function() {
+
+  });
+
+});
+
+describe("as", function() {
+
+  it("Is is just there to add doers to", function() {
+
+  });
+
+  it("Has nothing but doers", function() {
+
+  });
 
 });
 
@@ -83,15 +96,11 @@ describe("as.Doer", function() {
 
   });
 
-  it("Defaults to a generic service, neither a Model nor a View", function() {
+  it("Then becomes a generic service, neither a Model nor a View", function() {
 
   });
 
   it("Avoids defining an .extend function, you'd have to compose that onto it", function() {
-
-  });
-
-  it("Can however composoe onto arbitrary Backbone objects", function() {
 
   });
 
@@ -103,9 +112,21 @@ describe("as.Doer", function() {
 
   });
 
+  it("Is just a convention, perfectly fine for composition without as.Doer", function() {
+
+  });
+
+  it("Can compose onto instances of Backbone classes", function() {
+
+  });
+
 });
 
 describe("doer.assert(doer.SomeDependency, o)", function() {
+
+  it("Could use 'this' if no second argument, but we're aiming for ===1 way of doing things", function() {
+
+  });
 
 });
 
@@ -114,6 +135,12 @@ describe("console.assert(!!o.dependency, message) is also fine of course", funct
   it("Will however pass for any property of that name, with no check that it matches the registered doer", function() {
 
   });
+
+});
+
+describe("doer.conflict", function() {
+
+  xit("Does reverse assert");
 
 });
 
@@ -127,7 +154,7 @@ describe("Simple and transparent Dependency Injection", function() {
 
   });
 
-  it("Can only identify memters of the as. (or doer.) objects", function() {
+  it("Can only identify members of 'as.'", function() {
 
   });
 
@@ -135,13 +162,27 @@ describe("Simple and transparent Dependency Injection", function() {
 
   });
 
-  it("Could use 'this' if no second argument, but we're aiming for ===1 way of doing things", function() {
+});
+
+describe("as.DoerAware (or something like that)", function() {
+
+  it("Adds o.assert, o.conflict, o.inject", function() {
+
+  });
+
+  it("Is just aliases of the corresponding doer.assert etc but takes a single argument", function() {
 
   });
 
 });
 
 describe("noConflict", function() {
+
+});
+
+describe("CommonJS variants of as.Behavior(o) and doer.inject", function() {
+
+  it("Could do something like as.require('module', o)")
 
 });
 
