@@ -164,7 +164,7 @@ describe("Simple and transparent Dependency Injection", function() {
 
 });
 
-describe("as.DoerAware (or something like that)", function() {
+describe("as.Module", function() {
 
   it("Adds o.assert, o.conflict, o.inject", function() {
 
@@ -174,7 +174,16 @@ describe("as.DoerAware (or something like that)", function() {
 
   });
 
+  it("Also adds o.as", function() {
+
+  });
+
+  it("Which is a special 'as' so you can do: obj = as.Module({}).as.Behavior1().as.Behavior2()", function() {
+
+  });
+
 });
+
 
 describe("noConflict", function() {
 
@@ -182,7 +191,13 @@ describe("noConflict", function() {
 
 describe("CommonJS variants of as.Behavior(o) and doer.inject", function() {
 
-  it("Could do something like as.require('module', o)")
+  it("Could do something like as.require('module', o), though that would contradict the 'only doers in as.' rule", function() {
+
+  });
+
+  it("Could do something like doer.inject('module', o)", function() {
+
+  });
 
 });
 
@@ -195,5 +210,31 @@ describe("Grabage collection aspects of $.fn.doer", function() {
   xit("Can emit a 'removed' event");
 
   xit("Can emit an 'attached' event")
+
+});
+
+describe("The consequences", function() {
+
+  it("Means that o.Behavior1.method is the same function for every composition using Behavior1", function() {
+
+  });
+
+  it("Means you can override", function() {
+
+  });
+
+  it("Is a feature", function() {
+
+  });
+
+  it("Is still easy to do (o.Behavior2.method || o.Behavior1.method)(args)", function() {
+
+  });
+
+});
+
+describe("Applying on a prototype", function() {
+
+  it("Should be fine I guess");
 
 });
